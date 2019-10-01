@@ -1,11 +1,20 @@
-function preload(){
-  // put preload code here
-}
-
 function setup() {
-  // put setup code here
+  createCanvas(windowWidth, windowHeight);
+  background(0);
+  noStroke();
+  frameRate(30);
 }
 
 function draw() {
-  // put drawing code here
+
+  for (var x = 15; x < windowWidth; x += 15) {
+    for (var y = 15; y < windowHeight; y += 15) {
+
+      ellipse(x, y, 10);
+      fill(random(255));
+
+
+
+    }
+  }
 }
